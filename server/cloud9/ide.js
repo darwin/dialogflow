@@ -32,7 +32,7 @@ var Ide = module.exports = function(options, httpServer, exts, socket) {
         },
         waitSeconds: 30
     };
-
+	
     this.options = {
         workspaceDir: this.workspaceDir,
         mountDir: options.mountDir || this.workspaceDir,

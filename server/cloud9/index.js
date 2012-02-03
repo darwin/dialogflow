@@ -67,6 +67,7 @@ exports.main = function(options) {
             baseUrl: "",
             debug: options.debug,
             staticUrl: "/static",
+			plugins: options.plugins,
             workspaceId: name,
             name: name,
             version: options.version
