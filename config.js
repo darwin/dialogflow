@@ -1,6 +1,5 @@
 exports.Config = {
     workspace: "../workspace",
-	debug: true,
 	plugins: [
 	    "ext/filesystem/filesystem",
 	    "ext/settings/settings",
