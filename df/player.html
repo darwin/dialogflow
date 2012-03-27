@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="lib/jquery.js"></script>
+	<script src="lib/jit.js"></script>
+	<script src="build/flowengine.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> 
+	<script src="build/s_pepou_v_kralikarne.js"></script>
+	<script src="build/test1.js"></script>
+	<script src="build/flowplayer.js"></script>
+	<script src="build/boot.js"></script>
+	
+	<script>
+	var graph = s_pepou_v_kralikarne;
+	graph.setContext({
+		ozralec: true,
+		kraliku: 2
+	});
+	</script>
+</head>
+<body onload="init(graph);">
+<div id="container">
+    <div id="infovis"></div>
+</div>
+<div id="log"></div>
+</div>
+</body>
+</html>

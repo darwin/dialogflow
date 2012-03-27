@@ -22,11 +22,6 @@
 @n3.addOption new FlowOption "zpet k tematu", ->
 	"n1"
 
-@context=
-	hero: true
-	pocetKraliku: 12
-
-
 @s_pepou_v_kralikarne = new FlowGraph(@n1)
 
 #############################

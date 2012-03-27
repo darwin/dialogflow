@@ -94,6 +94,12 @@ class FlowNode extends FlowBase
 		@options.push(option)
 		@
 		
+	getOptionsList: (context) ->
+		list = []
+		for option in @options
+			list.push([option.text, option.isValid(context)])
+		list
+		
 class FlowState extends FlowBase
 
 	constructor: (@node, @context) ->
@@ -107,6 +113,9 @@ class FlowState extends FlowBase
 	# return array of options
 	options: ->
 		@node.options
+	
+	getOptionsList: (context) ->
+		@node.getOptionsList(context)
 		
 	select: (option) ->
 		o = @node.options[option]
